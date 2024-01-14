@@ -16,13 +16,15 @@
       <div class="container">
         <nav>
           <h1 class="logo"><span>V</span>ishal.</h1>
-          <ul>
+          <ul id="sidemenu">
             <li><a href="#header">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#check">Check-Up</a></li>
             <li><a href="#port">Portfolio</a></li>
             <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
           </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
           <p>Cyber Security</p>
@@ -245,6 +247,9 @@
         document.getElementById(tabname).classList.add("active-tab");
       }
     </script>
+
+    <!-------------1------------->
+
     <script>
       const scriptURL =
         "https://script.google.com/macros/s/AKfycbygWJ8Und0TMcWqybowp51b_DRTu_thNibLGUukXfKAFGaQcVt2ezSsXu2lSQx7tAgN-w/exec";
@@ -264,5 +269,19 @@
           .catch((error) => console.error("Error!", error.message));
       });
     </script>
+
+    <!-- -----------2---------- -->
+
+    <script>
+      var sidemeu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemeu.style.right = "0";
+      }
+      function closemenu() {
+        sidemeu.style.right = "-200px";
+      }
+    </script>
+
+    <!-------------3--------------->
   </body>
 </html>

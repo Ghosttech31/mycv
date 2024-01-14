@@ -52,7 +52,7 @@ nav ul li a::after {
   position: absolute;
   left: 0;
   bottom: -6px;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 nav ul li a:hover::after {
   width: 100%;
@@ -112,7 +112,7 @@ nav ul li a:hover::after {
   position: absolute;
   left: 0;
   bottom: -8px;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 .tab-links.active-link::after {
   width: 50%;
@@ -147,7 +147,7 @@ nav ul li a:hover::after {
   font-size: 13px;
   font-weight: 300;
   border-radius: 10px;
-  transition: 0.5s, transform 0.5s;
+  transition: 0.3s, transform 0.3s;
 }
 .check-list div i {
   font-size: 50px;
@@ -188,7 +188,7 @@ nav ul li a:hover::after {
   width: 100%;
   border-radius: 10px;
   display: block;
-  transition: transform 0.5s;
+  transition: transform 0.3s;
 }
 .layer {
   width: 100%;
@@ -206,7 +206,7 @@ nav ul li a:hover::after {
   padding: 0 40px;
   text-align: center;
   font-size: 14px;
-  transition: height 0.5s;
+  transition: height 0.3s;
 }
 .layer h3 {
   font-weight: 500;
@@ -239,7 +239,7 @@ nav ul li a:hover::after {
   border-radius: 6px;
   text-decoration: none;
   color: #fff;
-  transition: background 0.5s;
+  transition: 0.3s;
 }
 .btn:hover {
   background: #ff004f;
@@ -269,7 +269,7 @@ nav ul li a:hover::after {
   margin-right: 15px;
   color: #ababab;
   display: inline-block;
-  transition: transform 0.5s;
+  transition: transform 0.3s;
 }
 .social-icons a:hover {
   color: #ff004f;
@@ -312,4 +312,68 @@ form .btn2 {
   color: #61b752;
   margin-top: -40px;
   display: block;
+}
+nav .fa-solid {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  #header {
+    background-image: url(img/pexels-cátia-matos-1072179.jpg);
+  }
+  .header-text {
+    margin-top: 100%;
+    font-size: 16px;
+  }
+  .header-text h1 {
+    font-size: 30px;
+  }
+  nav .fa-solid {
+    display: block;
+    font-size: 25px;
+  }
+  nav ul {
+    background: #ff004f;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.3s;
+  }
+  nav ul li {
+    display: block;
+    margin: 25px;
+  }
+  nav ul .fa-solid {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+  .sudtitle {
+    font-size: 40px;
+  }
+  .about-col-1,
+  .about-col-2 {
+    flex-basis: 100%;
+  }
+  .about-col-1 {
+    margin-bottom: 30px;
+  }
+  .about-col-2 {
+    font-size: 14px;
+  }
+  .tab-links {
+    font-size: 16px;
+    margin-right: 20px;
+  }
+  .contact-left,
+  .contact-right {
+    flex-basis: 100%;
+  }
+  .copyright {
+    font-size: 14px;
+  }
 }
